@@ -1,0 +1,7 @@
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   5%|▍         | 16/338 [00:00<00:02, 155.76it/s]Loading weights:  19%|█▊        | 63/338 [00:00<00:00, 334.89it/s]Loading weights:  36%|███▌      | 122/338 [00:00<00:00, 441.13it/s]Loading weights:  51%|█████     | 172/338 [00:00<00:00, 456.61it/s]Loading weights:  65%|██████▌   | 220/338 [00:00<00:00, 459.54it/s]Loading weights:  83%|████████▎ | 279/338 [00:00<00:00, 496.37it/s]Loading weights:  97%|█████████▋| 329/338 [00:00<00:00, 483.02it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 461.69it/s]
+Using the latest cached version of the dataset since openai/gsm8k couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'main' at /home/r.dyachenko/.cache/huggingface/datasets/openai___gsm8k/main/0.0.0/740312add88f781978c0658806c59bc2815b9866 (last modified on Mon May  4 18:49:08 2026).
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+slurmstepd-nievegpu: error: *** JOB 29416 ON nievegpu CANCELLED AT 2026-05-07T01:47:49 ***

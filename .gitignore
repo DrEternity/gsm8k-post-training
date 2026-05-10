@@ -1,0 +1,40 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.synctex.gz
+
+# Model weights (too large)
+models/
+checkpoints/
+*.safetensors
+*.bin
+*.pt
+
+# Training checkpoints (LoRA adapters + optimizer states)
+results/sft_gsm8k/**/checkpoint-*/
+results/grpo/**/checkpoint-*/
+
+# Data (reproducible from source)
+data/
+
+# Large results files (per-example predictions)
+*_results.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

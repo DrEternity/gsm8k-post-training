@@ -1,0 +1,86 @@
+[
+  {
+    "model": "Qwen2.5-1.5B + SFT + GRPO (dapo_checkpoint-1840)",
+    "dataset": "GSM8K test",
+    "total": 1319,
+    "max_new_tokens": 512,
+    "accuracy": 0.7657,
+    "correct": 1010,
+    "truncated": 1024,
+    "no_extract": 0,
+    "extraction_methods": {
+      "boxed": 1315,
+      "last_num": 4
+    },
+    "total_time_s": 194.6,
+    "avg_time_s": 0.15,
+    "avg_output_tokens": 478,
+    "throughput_tps": 3240.4,
+    "peak_vram_gb": 16.91,
+    "method": "dapo",
+    "adapter_path": "results/grpo/dapo_g16/checkpoint-1840"
+  },
+  {
+    "model": "Qwen2.5-1.5B + SFT + GRPO (dapo_checkpoint-2760)",
+    "dataset": "GSM8K test",
+    "total": 1319,
+    "max_new_tokens": 512,
+    "accuracy": 0.7817,
+    "correct": 1031,
+    "truncated": 1319,
+    "no_extract": 0,
+    "extraction_methods": {
+      "boxed": 1313,
+      "last_num": 6
+    },
+    "total_time_s": 215.5,
+    "avg_time_s": 0.16,
+    "avg_output_tokens": 512,
+    "throughput_tps": 3134.4,
+    "peak_vram_gb": 16.91,
+    "method": "dapo",
+    "adapter_path": "results/grpo/dapo_g16/checkpoint-2760"
+  },
+  {
+    "model": "Qwen2.5-1.5B + SFT + GRPO (dapo_checkpoint-3680)",
+    "dataset": "GSM8K test",
+    "total": 1319,
+    "max_new_tokens": 512,
+    "accuracy": 0.771,
+    "correct": 1017,
+    "truncated": 1319,
+    "no_extract": 0,
+    "extraction_methods": {
+      "boxed": 1313,
+      "last_num": 6
+    },
+    "total_time_s": 215.5,
+    "avg_time_s": 0.16,
+    "avg_output_tokens": 512,
+    "throughput_tps": 3133.1,
+    "peak_vram_gb": 16.91,
+    "method": "dapo",
+    "adapter_path": "results/grpo/dapo_g16/checkpoint-3680"
+  },
+  {
+    "model": "Qwen2.5-1.5B + SFT + GRPO (dapo_checkpoint-4600)",
+    "dataset": "GSM8K test",
+    "total": 1319,
+    "max_new_tokens": 512,
+    "accuracy": 0.7703,
+    "correct": 1016,
+    "truncated": 807,
+    "no_extract": 0,
+    "extraction_methods": {
+      "boxed": 1314,
+      "last_num": 5
+    },
+    "total_time_s": 184.9,
+    "avg_time_s": 0.14,
+    "avg_output_tokens": 454,
+    "throughput_tps": 3237.1,
+    "peak_vram_gb": 16.91,
+    "method": "dapo",
+    "adapter_path": "results/grpo/dapo_g16/checkpoint-4600"
+  }
+]

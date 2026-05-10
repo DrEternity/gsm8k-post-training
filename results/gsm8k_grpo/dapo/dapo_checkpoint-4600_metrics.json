@@ -1,0 +1,19 @@
+{
+  "model": "Qwen2.5-1.5B + SFT + GRPO (dapo_checkpoint-4600)",
+  "dataset": "GSM8K test",
+  "total": 1319,
+  "max_new_tokens": 512,
+  "accuracy": 0.7703,
+  "correct": 1016,
+  "truncated": 807,
+  "no_extract": 0,
+  "extraction_methods": {
+    "boxed": 1314,
+    "last_num": 5
+  },
+  "total_time_s": 184.9,
+  "avg_time_s": 0.14,
+  "avg_output_tokens": 454,
+  "throughput_tps": 3237.1,
+  "peak_vram_gb": 16.91
+}

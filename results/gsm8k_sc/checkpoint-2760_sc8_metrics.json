@@ -1,0 +1,13 @@
+{
+  "model": "checkpoint-2760",
+  "dataset": "GSM8K test",
+  "num_samples": 8,
+  "total": 1319,
+  "max_new_tokens": 512,
+  "accuracy_sc": 0.7968,
+  "correct": 1051,
+  "unanimous_correct": 976,
+  "total_time_s": 0,
+  "avg_time_s": 0.0,
+  "peak_vram_gb": 3.39
+}

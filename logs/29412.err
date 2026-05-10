@@ -1,0 +1,73 @@
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   1%|▏         | 5/338 [00:00<00:07, 47.44it/s]Loading weights:  19%|█▊        | 63/338 [00:00<00:00, 343.88it/s]Loading weights:  33%|███▎      | 112/338 [00:00<00:00, 392.31it/s]Loading weights:  50%|█████     | 170/338 [00:00<00:00, 431.19it/s]Loading weights:  68%|██████▊   | 231/338 [00:00<00:00, 470.69it/s]Loading weights:  83%|████████▎ | 279/338 [00:00<00:00, 470.43it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 447.88it/s]
+Using the latest cached version of the dataset since openai/gsm8k couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'main' at /home/r.dyachenko/.cache/huggingface/datasets/openai___gsm8k/main/0.0.0/740312add88f781978c0658806c59bc2815b9866 (last modified on Mon May  4 18:49:08 2026).
+Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/r.dyachenko/llm_education/project3/scripts/filter_grpo.py", line 220, in <module>
+    main()
+  File "/home/r.dyachenko/llm_education/project3/scripts/filter_grpo.py", line 121, in main
+    outputs = model.generate(
+              ^^^^^^^^^^^^^^^
+  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/transformers/generation/utils.py", line 2535, in generate
+    result = decoding_method(
+             ^^^^^^^^^^^^^^^^
+  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/transformers/generation/utils.py", line 2728, in _sample
+    outputs = self._prefill(
+              ^^^^^^^^^^^^^^
+  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/transformers/generation/utils.py", line 3776, in _prefill
+    return self(**model_inputs, return_dict=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/transformers/utils/generic.py", line 843, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 476, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ^^^^^^^^^^^
+  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/transformers/utils/generic.py", line 917, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/transformers/utils/output_capturing.py", line 253, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 411, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/transformers/modeling_layers.py", line 93, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 313, in forward
+    hidden_states = self.mlp(hidden_states)
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 47, in forward
+    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 13.26 GiB. GPU 0 has a total capacity of 39.49 GiB of which 1.40 GiB is free. Including non-PyTorch memory, this process has 38.08 GiB memory in use. Of the allocated memory 37.53 GiB is allocated by PyTorch, and 52.17 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

@@ -1,0 +1,12 @@
+Using the latest cached version of the dataset since openai/gsm8k couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'main' at /home/r.dyachenko/.cache/huggingface/datasets/openai___gsm8k/main/0.0.0/740312add88f781978c0658806c59bc2815b9866 (last modified on Mon May  4 18:49:08 2026).
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   1%|▏         | 5/338 [00:00<00:07, 47.27it/s]Loading weights:  19%|█▊        | 63/338 [00:00<00:00, 344.26it/s]Loading weights:  33%|███▎      | 112/338 [00:00<00:00, 407.66it/s]Loading weights:  49%|████▉     | 165/338 [00:00<00:00, 453.14it/s]Loading weights:  64%|██████▍   | 217/338 [00:00<00:00, 475.42it/s]Loading weights:  80%|███████▉  | 269/338 [00:00<00:00, 480.22it/s]Loading weights:  97%|█████████▋| 327/338 [00:00<00:00, 508.65it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 458.13it/s]
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+Using the latest cached version of the dataset since openai/gsm8k couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'main' at /home/r.dyachenko/.cache/huggingface/datasets/openai___gsm8k/main/0.0.0/740312add88f781978c0658806c59bc2815b9866 (last modified on Mon May  4 18:49:08 2026).
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   1%|          | 3/338 [00:00<00:11, 29.86it/s]Loading weights:  15%|█▌        | 52/338 [00:00<00:00, 298.58it/s]Loading weights:  30%|██▉       | 100/338 [00:00<00:00, 380.91it/s]Loading weights:  47%|████▋     | 159/338 [00:00<00:00, 459.65it/s]Loading weights:  62%|██████▏   | 209/338 [00:00<00:00, 464.68it/s]Loading weights:  79%|███████▉  | 267/338 [00:00<00:00, 499.44it/s]Loading weights:  94%|█████████▍| 317/338 [00:00<00:00, 490.11it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 454.33it/s]
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
+[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.

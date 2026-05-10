@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 189, in _run_module_as_main
+  File "<frozen runpy>", line 159, in _get_module_details
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/r.dyachenko/llm_education/project3/scripts/eval_sft.py", line 203
+    global BATCH_SIZE
+    ^^^^^^^^^^^^^^^^^
+SyntaxError: name 'BATCH_SIZE' is used prior to global declaration

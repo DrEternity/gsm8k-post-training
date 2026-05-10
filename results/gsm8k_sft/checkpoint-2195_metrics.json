@@ -1,0 +1,19 @@
+{
+  "model": "Qwen2.5-1.5B + SFT (checkpoint-2195)",
+  "dataset": "GSM8K test",
+  "total": 1319,
+  "max_new_tokens": 512,
+  "accuracy": 0.6823,
+  "correct": 900,
+  "truncated": 512,
+  "no_extract": 0,
+  "extraction_methods": {
+    "boxed": 1313,
+    "last_num": 6
+  },
+  "total_time_s": 0,
+  "avg_time_s": 0.0,
+  "avg_output_tokens": 0,
+  "throughput_tps": 0,
+  "peak_vram_gb": 3.39
+}

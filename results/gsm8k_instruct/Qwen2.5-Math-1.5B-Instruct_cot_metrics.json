@@ -1,0 +1,20 @@
+{
+  "model": "Qwen2.5-Math-1.5B-Instruct_cot",
+  "dataset": "GSM8K test",
+  "total": 1319,
+  "max_new_tokens": 512,
+  "accuracy": 0.8567,
+  "correct": 1130,
+  "truncated": 1319,
+  "no_extract": 4,
+  "extraction_methods": {
+    "boxed": 1265,
+    "last_num": 50,
+    "no_extract": 4
+  },
+  "total_time_s": 218.1,
+  "avg_time_s": 0.17,
+  "avg_output_tokens": 512,
+  "throughput_tps": 3096.4,
+  "peak_vram_gb": 17.09
+}

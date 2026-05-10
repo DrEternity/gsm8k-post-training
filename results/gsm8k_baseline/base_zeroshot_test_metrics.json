@@ -1,0 +1,21 @@
+{
+  "model": "Qwen2.5-1.5B",
+  "experiment": "base_zeroshot_test3",
+  "dataset": "GSM8K test",
+  "total": 1319,
+  "max_new_tokens": 512,
+  "accuracy": 0.6528,
+  "correct": 861,
+  "truncated": 1319,
+  "no_extract": 0,
+  "extraction_methods": {
+    "boxed": 861,
+    "####": 287,
+    "last_num": 171
+  },
+  "total_time_s": 221.3,
+  "avg_time_s": 0.17,
+  "avg_output_tokens": 512,
+  "throughput_tps": 3052.1,
+  "peak_vram_gb": 16.57
+}
