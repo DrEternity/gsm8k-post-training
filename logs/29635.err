@@ -1,6 +1,0 @@
-Using the latest cached version of the dataset since openai/gsm8k couldn't be found on the Hugging Face Hub (offline mode is enabled).
-Found the latest cached dataset configuration 'main' at /home/r.dyachenko/.cache/huggingface/datasets/openai___gsm8k/main/0.0.0/740312add88f781978c0658806c59bc2815b9866 (last modified on Mon May  4 18:49:08 2026).
-Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<00:42,  7.85it/s]Loading weights:  16%|█▌        | 53/338 [00:00<00:01, 277.32it/s]Loading weights:  33%|███▎      | 110/338 [00:00<00:00, 397.35it/s]Loading weights:  47%|████▋     | 160/338 [00:00<00:00, 435.98it/s]Loading weights:  61%|██████    | 207/338 [00:00<00:00, 447.80it/s]Loading weights:  79%|███████▊  | 266/338 [00:00<00:00, 491.40it/s]Loading weights:  93%|█████████▎| 316/338 [00:00<00:00, 493.83it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 440.73it/s]
-[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
-[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
-[transformers] Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.

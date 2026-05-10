@@ -1,72 +1,0 @@
-Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   1%|▏         | 5/338 [00:00<00:06, 47.67it/s]Loading weights:  19%|█▊        | 63/338 [00:00<00:00, 343.29it/s]Loading weights:  33%|███▎      | 110/338 [00:00<00:00, 395.62it/s]Loading weights:  48%|████▊     | 161/338 [00:00<00:00, 438.33it/s]Loading weights:  65%|██████▍   | 219/338 [00:00<00:00, 479.15it/s]Loading weights:  79%|███████▉  | 267/338 [00:00<00:00, 477.43it/s]Loading weights:  93%|█████████▎| 315/338 [00:00<00:00, 474.20it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 450.74it/s]
-In file included from /tmp/tmp5plzaf6n/main.c:1:
-/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/triton/backends/nvidia/include/cuda.h:56:10: fatal error: stdlib.h: No such file or directory
-   56 | #include <stdlib.h>
-      |          ^~~~~~~~~~
-compilation terminated.
-Traceback (most recent call last):
-  File "<frozen runpy>", line 198, in _run_module_as_main
-  File "<frozen runpy>", line 88, in _run_code
-  File "/home/r.dyachenko/llm_education/project3/scripts/grpo_train.py", line 252, in <module>
-    main()
-  File "/home/r.dyachenko/llm_education/project3/scripts/grpo_train.py", line 195, in main
-    trainer = GRPOTrainer(
-              ^^^^^^^^^^^^
-  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/trl/trainer/grpo_trainer.py", line 347, in __init__
-    if is_peft_available() and is_peft_model(model) and peft_config is not None:
-                               ^^^^^^^^^^^^^^^^^^^^
-  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/accelerate/utils/modeling.py", line 79, in is_peft_model
-    return is_peft_available() and isinstance(extract_model_from_parallel(model), PeftModel)
-                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/accelerate/utils/other.py", line 258, in extract_model_from_parallel
-    from deepspeed import DeepSpeedEngine
-  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/deepspeed/__init__.py", line 25, in <module>
-    from . import ops
-  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/deepspeed/ops/__init__.py", line 11, in <module>
-    from . import transformer
-  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/deepspeed/ops/transformer/__init__.py", line 7, in <module>
-    from .inference.config import DeepSpeedInferenceConfig
-  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/deepspeed/ops/transformer/inference/__init__.py", line 7, in <module>
-    from ....model_implementations.transformers.ds_transformer import DeepSpeedTransformerInference
-  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/deepspeed/model_implementations/__init__.py", line 6, in <module>
-    from .transformers.ds_transformer import DeepSpeedTransformerInference
-  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/deepspeed/model_implementations/transformers/ds_transformer.py", line 18, in <module>
-    from deepspeed.ops.transformer.inference.triton.mlp import TritonMLP
-  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/deepspeed/ops/transformer/inference/triton/__init__.py", line 10, in <module>
-    from .ops import *
-  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/deepspeed/ops/transformer/inference/triton/ops.py", line 6, in <module>
-    import deepspeed.ops.transformer.inference.triton.matmul_ext as matmul_ext
-  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/deepspeed/ops/transformer/inference/triton/matmul_ext.py", line 10, in <module>
-    import deepspeed.ops.transformer.inference.triton.triton_matmul_kernel as triton_matmul_kernel
-  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/deepspeed/ops/transformer/inference/triton/triton_matmul_kernel.py", line 51, in <module>
-    @triton.autotune(
-     ^^^^^^^^^^^^^^^^
-  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/triton/runtime/autotuner.py", line 368, in decorator
-    return Autotuner(fn, fn.arg_names, configs, key, reset_to_zero, restore_value, pre_hook=pre_hook,
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/triton/runtime/autotuner.py", line 130, in __init__
-    self.do_bench = driver.active.get_benchmarker()
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/triton/runtime/driver.py", line 23, in __getattr__
-    self._initialize_obj()
-  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/triton/runtime/driver.py", line 20, in _initialize_obj
-    self._obj = self._init_fn()
-                ^^^^^^^^^^^^^^^
-  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/triton/runtime/driver.py", line 9, in _create_driver
-    return actives[0]()
-           ^^^^^^^^^^^^
-  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/triton/backends/nvidia/driver.py", line 450, in __init__
-    self.utils = CudaUtils()  # TODO: make static
-                 ^^^^^^^^^^^
-  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/triton/backends/nvidia/driver.py", line 80, in __init__
-    mod = compile_module_from_src(Path(os.path.join(dirname, "driver.c")).read_text(), "cuda_utils")
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/triton/backends/nvidia/driver.py", line 57, in compile_module_from_src
-    so = _build(name, src_path, tmpdir, library_dirs(), include_dir, libraries)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/triton/runtime/build.py", line 50, in _build
-    ret = subprocess.check_call(cc_cmd)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/subprocess.py", line 413, in check_call
-    raise CalledProcessError(retcode, cmd)
-subprocess.CalledProcessError: Command '['/home/r.dyachenko/bin/gcc', '/tmp/tmp5plzaf6n/main.c', '-O3', '-shared', '-fPIC', '-Wno-psabi', '-o', '/tmp/tmp5plzaf6n/cuda_utils.cpython-312-x86_64-linux-gnu.so', '-lcuda', '-L/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/triton/backends/nvidia/lib', '-L/lib64', '-I/home/r.dyachenko/miniconda3/envs/llm-alignment/lib/python3.12/site-packages/triton/backends/nvidia/include', '-I/tmp/tmp5plzaf6n', '-I/home/r.dyachenko/miniconda3/envs/llm-alignment/include/python3.12']' returned non-zero exit status 1.

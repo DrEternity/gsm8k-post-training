@@ -1,25 +1,0 @@
-Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   1%|▏         | 5/338 [00:00<00:07, 47.23it/s]Loading weights:  19%|█▊        | 63/338 [00:00<00:00, 330.47it/s]Loading weights:  33%|███▎      | 113/338 [00:00<00:00, 402.27it/s]Loading weights:  51%|█████     | 171/338 [00:00<00:00, 463.15it/s]Loading weights:  65%|██████▍   | 219/338 [00:00<00:00, 466.49it/s]Loading weights:  79%|███████▉  | 268/338 [00:00<00:00, 474.17it/s]Loading weights:  97%|█████████▋| 327/338 [00:00<00:00, 503.78it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 453.24it/s]
-Using the latest cached version of the dataset since openai/gsm8k couldn't be found on the Hugging Face Hub (offline mode is enabled).
-Found the latest cached dataset configuration 'main' at /home/r.dyachenko/.cache/huggingface/datasets/openai___gsm8k/main/0.0.0/740312add88f781978c0658806c59bc2815b9866 (last modified on Mon May  4 18:49:08 2026).
-Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
-Setting `pad_token_id` to `eos_token_id`:151643 for open-end generation.
