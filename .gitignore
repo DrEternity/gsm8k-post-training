@@ -31,6 +31,12 @@ data/
 # Large results files (per-example predictions)
 *_results.json
 
+# Notebooks
+notebooks/
+
+# Logs
+logs/
+
 # OS
 .DS_Store
 Thumbs.db
